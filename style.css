@@ -187,6 +187,12 @@ nav a.active {
     color: var(--secondary);
 }
 
+/* ===== Home Services ===== */
+
+.home-services{
+    text-align:center;
+}
+
 /* ===== Sections ===== */
 
 main section {
