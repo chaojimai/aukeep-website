@@ -1,3 +1,14 @@
+/* ===== Theme ===== */
+
+:root {
+    --primary: #111827;
+    --secondary: #4b5563;
+    --border: #e5e7eb;
+    --background: #ffffff;
+    --text: #111827;
+}
+
+
 /* ===== Global ===== */
 
 * {
@@ -9,8 +20,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: #ffffff;
+color: var(--text);
+background: var(--background);
 }
 
 a {
