@@ -163,3 +163,11 @@ nav a.active {
         font-size: 36px;
     }
 }
+
+/* ===== Container ===== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
