@@ -173,6 +173,30 @@ nav a.active {
     box-shadow: 0 32px 70px rgba(0, 0, 0, 0.16);
 }
 
+/* ===== Page Hero ===== */
+
+.page-hero {
+    text-align: center;
+    padding: 90px 0 80px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 80px;
+}
+
+.page-hero h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+
+.page-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 1.8;
+    color: var(--secondary);
+}
+
 /* ===== Why Choose ===== */
 
 .why-choose {
