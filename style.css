@@ -8,7 +8,6 @@
     --text: #111827;
 }
 
-
 /* ===== Global ===== */
 
 * {
@@ -20,8 +19,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-color: var(--text);
-background: var(--background);
+    color: var(--text);
+    background: var(--background);
 }
 
 a {
@@ -30,8 +29,8 @@ a {
 }
 
 img {
-    max-width: 100%;
     display: block;
+    max-width: 100%;
 }
 
 ul {
@@ -48,6 +47,14 @@ footer {
     padding: 24px 40px;
 }
 
+/* ===== Container ===== */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 /* ===== Header ===== */
 
 header {
@@ -55,7 +62,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 24px;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--border);
 }
 
 header h1 {
@@ -65,7 +72,7 @@ header h1 {
 }
 
 header h1 a {
-    color: #000;
+    color: var(--text);
     text-decoration: none;
 }
 
@@ -76,12 +83,21 @@ nav {
 
 nav a {
     font-size: 15px;
-    color: #555;
+    color: var(--secondary);
     transition: color 0.2s ease;
 }
 
 nav a:hover {
-    color: #000;
+    color: var(--text);
+}
+
+/* ===== Active Navigation ===== */
+
+nav a.active {
+    color: var(--text);
+    font-weight: 700;
+    border-bottom: 2px solid var(--text);
+    padding-bottom: 4px;
 }
 
 /* ===== Hero ===== */
@@ -102,14 +118,14 @@ nav a:hover {
 
 .hero p {
     font-size: 18px;
-    color: #666;
+    color: var(--secondary);
     max-width: 700px;
     margin-bottom: 36px;
 }
 
 .hero a {
     display: inline-block;
-    background: #000;
+    background: var(--text);
     color: #fff;
     padding: 14px 28px;
     border-radius: 6px;
@@ -118,10 +134,10 @@ nav a:hover {
 }
 
 .hero a:hover {
-    background: #333;
+    background: var(--primary);
 }
 
-/* ===== Core Services ===== */
+/* ===== Sections ===== */
 
 main section {
     margin-bottom: 80px;
@@ -140,54 +156,7 @@ main section h3 {
 
 main section p {
     max-width: 760px;
-    color: #666;
-}
-
-/* ===== Active Navigation ===== */
-
-nav a.active {
-    color: #000;
-    font-weight: 700;
-    border-bottom: 2px solid #000;
-    padding-bottom: 4px;
-}
-
-/* ===== Responsive ===== */
-
-@media (max-width: 768px) {
-
-    header,
-    main,
-    footer {
-        padding: 20px;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-
-    .hero h2 {
-        font-size: 36px;
-    }
-
-    .services-grid {
-    grid-template-columns: 1fr;
-    }
-}
-
-/* ===== Container ===== */
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    color: var(--secondary);
 }
 
 /* ===== Services Grid ===== */
@@ -213,12 +182,46 @@ nav a.active {
 }
 
 .service-card h3 {
-    margin-top: 0;
-    margin-bottom: 16px;
+    margin: 0 0 16px;
     font-size: 22px;
 }
 
 .service-card p {
     margin: 0;
+    max-width: none;
     color: var(--secondary);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 768px) {
+
+    header,
+    main,
+    footer {
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .hero {
+        padding: 72px 0;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 }
