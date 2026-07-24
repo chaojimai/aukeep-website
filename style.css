@@ -103,38 +103,13 @@ nav a.active {
 /* ===== Hero ===== */
 
 .hero {
-    padding: 100px 0;
-    background: linear-gradient(to bottom, #ffffff, #f9fafb);
-}
-
-.hero h2 {
-    font-size: 52px;
-    line-height: 1.15;
-    max-width: 760px;
-    margin-bottom: 24px;
-    font-weight: 700;
-    letter-spacing: -1px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: var(--secondary);
-    max-width: 700px;
-    margin-bottom: 36px;
-}
-
-.hero a {
-    display: inline-block;
-    background: var(--text);
-    color: #fff;
-    padding: 14px 28px;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: background 0.2s ease;
-}
-
-.hero a:hover {
-    background: var(--primary);
+    padding: 120px 0;
+    background: linear-gradient(
+        180deg,
+        #ffffff 0%,
+        #fafafa 55%,
+        #f3f4f6 100%
+    );
 }
 
 .hero-content {
@@ -142,6 +117,39 @@ nav a.active {
     grid-template-columns: 1.2fr 0.8fr;
     align-items: center;
     gap: 64px;
+}
+
+.hero-text h2 {
+    font-size: 56px;
+    line-height: 1.15;
+    max-width: 680px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.hero-text p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--secondary);
+    max-width: 600px;
+    margin-bottom: 36px;
+}
+
+.hero-text a {
+    display: inline-block;
+    background: var(--text);
+    color: #fff;
+    padding: 16px 34px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.hero-text a:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
 }
 
 .hero-image {
@@ -154,15 +162,17 @@ nav a.active {
     width: 100%;
     max-width: 380px;
     aspect-ratio: 1 / 1;
-    border: 2px dashed var(--border);
-    border-radius: 20px;
-    background: #f9fafb;
-    color: var(--secondary);
 
     display: flex;
     align-items: center;
     justify-content: center;
 
+    background: #f9fafb;
+    border: 2px dashed var(--border);
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.06);
+
+    color: var(--secondary);
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 3px;
@@ -247,20 +257,25 @@ main section p {
         padding: 72px 0;
     }
 
-    .hero h2 {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-text h2 {
         font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
     }
 
     .services-grid {
         grid-template-columns: 1fr;
     }
 
-    .hero-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-    }
-
-    .hero-image {
-    order: -1;
-    }
 }
