@@ -101,3 +101,25 @@ nav a:hover {
 .hero a:hover {
     background: #333;
 }
+
+/* ===== Core Services ===== */
+
+main section {
+    margin-bottom: 80px;
+}
+
+main section h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+main section h3 {
+    font-size: 22px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+main section p {
+    max-width: 760px;
+    color: #666;
+}
