@@ -123,3 +123,12 @@ main section p {
     max-width: 760px;
     color: #666;
 }
+
+/* ===== Active Navigation ===== */
+
+nav a.active {
+    color: #000;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+    padding-bottom: 4px;
+}
