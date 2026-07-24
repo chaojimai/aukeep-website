@@ -36,3 +36,34 @@ footer {
     margin: 0 auto;
     padding: 24px;
 }
+
+/* ===== Header ===== */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+}
+
+nav a {
+    font-size: 15px;
+    color: #555;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
